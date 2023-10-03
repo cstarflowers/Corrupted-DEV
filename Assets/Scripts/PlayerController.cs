@@ -42,5 +42,15 @@ public void Update()
             }
         }
     }
+    if(Mathf.Abs(Input.GetAxisRaw("Vertical")) != 0 || Mathf.Abs(Input.GetAxisRaw("Horizontal")) != 0) {
+        animator.SetBool("walking", true);
+        animator.SetFloat("MoveY", Input.GetAxisRaw("Vertical"));
+        animator.SetFloat("MoveX", Input.GetAxisRaw("Horizontal"));
+    }
+    else {
+        animator.SetBool("walking", false);
+        //animator.SetFloat("MoveY", 999);
+        //animator.SetFloat("MoveX", 999);
+    }
 }
 }
