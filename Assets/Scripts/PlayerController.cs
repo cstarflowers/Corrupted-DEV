@@ -5,45 +5,49 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 public float speed;
-public LayerMask collisionLayer;
-public Transform moveTo;
+public Rigidbody2D player;
 public Animator animator;
+
+public float verticalRaw;
+private float verticalAbs;
+public float horizontalRaw;
+private float horizontalAbs;
 
 void Start() {
     Application.targetFrameRate = 60;
     GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 
     // ORIGINAL CODE BY CG SMOOTHIE (https://www.youtube.com/watch?v=1YKfBh1FCWY)
+    // WITH CODE FROM NIGHT RUN STUDIO (https://www.youtube.com/watch?v=d9bcmvr_Me4) 
     // WARNING: DO NOT ADD AS CHILD OF PLAYER
 }
 
-public void FixedUpdate()
-{
-    float verticalRaw = Input.GetAxisRaw("Vertical");
-    float horizontalRaw = Input.GetAxisRaw("Horizontal");
-    transform.position = Vector3.MoveTowards(transform.position, moveTo.position, speed * Time.deltaTime);
+void Update() {
+    verticalRaw = Input.GetAxisRaw("Vertical");
+    horizontalRaw = Input.GetAxisRaw("Horizontal");
+    verticalAbs = Mathf.Abs(verticalRaw);
+    horizontalAbs = Mathf.Abs(horizontalRaw);
+}
 
-    if (Vector3.Distance(transform.position, moveTo.position) <= 0.1f) {
+void FixedUpdate() {
+    if (verticalAbs > 0 || horizontalAbs > 0) {
         animator.SetBool("isWalking", true);
 
-        if (Mathf.Abs(horizontalRaw) == 1) {
+        if (horizontalAbs == 1) {
             animator.SetFloat("MoveX", horizontalRaw);
             animator.SetFloat("MoveY", 0);
-            if (!Physics2D.OverlapCircle(moveTo.position + new Vector3(horizontalRaw, 0f), 0.2f, collisionLayer)) {
-                moveTo.position += new Vector3(horizontalRaw, 0f);
-            }
+            player.AddForce(new Vector2(horizontalRaw * speed, 0));
         }
 
-        else if (Mathf.Abs(verticalRaw) == 1) {
+        else if (verticalAbs == 1) {
             animator.SetFloat("MoveY", verticalRaw);
             animator.SetFloat("MoveX", 0);
-            if (!Physics2D.OverlapCircle(moveTo.position + new Vector3(0f, verticalRaw), 0.2f, collisionLayer)) {
-                moveTo.position += new Vector3(0f, verticalRaw);
+            player.AddForce(new Vector2(0, verticalRaw * speed));
+            //verticalRaw = 0;
             }
         }
-    }
 
-    if (Mathf.Abs(verticalRaw) == 0 && Mathf.Abs(horizontalRaw) == 0) {
+    else {
         animator.SetBool("isWalking", false);
     }
 }

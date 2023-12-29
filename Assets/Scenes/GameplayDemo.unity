@@ -42536,8 +42536,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 2
+  m_AngularDrag: 999
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -42562,12 +42562,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc56e8c3b0dd5042bba6c768e21feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
-  collisionLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  moveTo: {fileID: 2147370783}
+  speed: 5
+  player: {fileID: 1779435457}
   animator: {fileID: 1779435459}
+  verticalRaw: 0
+  horizontalRaw: 0
 --- !u!95 &1779435459
 Animator:
   serializedVersion: 5
@@ -43024,7 +43023,7 @@ GameObject:
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2147370783
 Transform:
   m_ObjectHideFlags: 0
