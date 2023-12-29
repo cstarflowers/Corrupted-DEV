@@ -616,7 +616,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newLevel: GameplayDemo
   delay: 0
-  fadeSpeed: 5
+  fadeSpeed: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

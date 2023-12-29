@@ -43,7 +43,6 @@ void FixedUpdate() {
             animator.SetFloat("MoveY", verticalRaw);
             animator.SetFloat("MoveX", 0);
             player.AddForce(new Vector2(0, verticalRaw * speed));
-            //verticalRaw = 0;
             }
         }
 
