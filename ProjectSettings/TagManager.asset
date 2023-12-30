@@ -38,9 +38,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Other
+    uniqueID: 1719923113
+    locked: 0
+  - name: UI
+    uniqueID: 830143391
+    locked: 0
   - name: Player
     uniqueID: 1108809965
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Enemies/NPCs
+    uniqueID: 882671077
+    locked: 0
+  - name: Terrain
+    uniqueID: 3219946713
     locked: 0
