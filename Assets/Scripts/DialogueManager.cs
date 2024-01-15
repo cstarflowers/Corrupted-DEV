@@ -22,7 +22,6 @@ public class DialogueManager : MonoBehaviour {
     private Animator animator;
 
     void Start() {
-        // player = GameObject.FindWithTag("Player");
         movement = player.GetComponent<PlayerController>();
         animator = player.GetComponent<Animator>();
     }
@@ -45,7 +44,7 @@ public class DialogueManager : MonoBehaviour {
                     onText = 0;
 
                 }
-                else { //if(dialogue[onText].ToString() != "STOP" && dialogue[onText].ToString() != "GOTO NEXT"){}
+                else {
                     StartCoroutine(showText(dialogue[onText]));
                     onText += 1;
                 }
