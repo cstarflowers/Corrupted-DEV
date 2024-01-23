@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
 
+public int health = 100;
 public float speed;
 public Rigidbody2D player;
 public Animator animator;
@@ -48,6 +49,19 @@ void FixedUpdate() {
 
     else {
         animator.SetBool("isWalking", false);
+    }
+}
+
+void OnTriggerEnter2D(Collider2D enemy) {
+    if(enemy.gameObject.tag == "Enemy") {
+        int health = player.GetComponent<PlayerController>().health;
+        if(health <= 0) {
+            player.GetComponent<PlayerController>().enabled = false;
+            Initiate.Fade("CombatDemo",Color.white,5);
+        }
+        else {
+            player.GetComponent<PlayerController>().health -= 20;
+        }
     }
 }
 }
