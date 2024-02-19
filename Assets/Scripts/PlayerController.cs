@@ -8,8 +8,8 @@ public class PlayerController : MonoBehaviour {
 public string nextLevel;
 public TextMeshProUGUI healthText;
 public TextMeshProUGUI enemyDamageText;
-public int health = 100;
-public int enemyHealth = 999;
+static public int health = 100;
+static public int enemyHealth = 999;
 private int enemyDamage = 0;
 public float speed;
 public Rigidbody2D player;
