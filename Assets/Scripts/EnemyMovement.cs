@@ -28,5 +28,8 @@ public class EnemyMovement : MonoBehaviour
         if(player.gameObject.tag == "Player") {
             Initiate.Fade(enemyLevel,Color.white,5);
         }
+        //else if(DialogueManager.inUse) {
+        //    gameObject.SetActive(false);
+        //}
     }
 }

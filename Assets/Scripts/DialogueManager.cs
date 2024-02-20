@@ -14,7 +14,7 @@ public class DialogueManager : MonoBehaviour {
     public GameObject dialogueBox;
 
     private bool isColliding;
-    private bool inUse = false;
+    static public bool inUse = false;
     private int onText = 0;
     public Rigidbody2D player;
 

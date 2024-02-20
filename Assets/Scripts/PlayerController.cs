@@ -51,9 +51,11 @@ void Start() {
 void Update() {
     maxHealth = 100 + (5 * enemyDefeats);
     if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
+        animator.speed = 2f;
         speed = devSpeed * 2;
     }
     else {
+        animator.speed = 1f;
         speed = devSpeed;
     }
     verticalRaw = Input.GetAxisRaw("Vertical");
@@ -86,6 +88,7 @@ void FixedUpdate() {
 
 void OnTriggerEnter2D(Collider2D enemy) {
     if(enemy.gameObject.tag == "Enemy") {
+        Destroy(enemy.gameObject);
         health -= 20;
         if(healthText != null) {
             healthText.text = "HP:" + health + "/" + maxHealth;
@@ -96,6 +99,7 @@ void OnTriggerEnter2D(Collider2D enemy) {
         }
     }
     else if(enemy.gameObject.tag == "AttackPoint") {
+        Destroy(enemy.gameObject);
         enemyDamage = health / 2;
         enemyHealth -= enemyDamage;
         // Debug.Log("[Debug] Enemy HP: " + enemyHealth + "/" + baseEnemyHealth + " (" + enemyDamage + " damage)");
