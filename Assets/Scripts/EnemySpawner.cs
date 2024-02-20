@@ -10,10 +10,11 @@ public class EnemySpawner : MonoBehaviour
     public GameObject projectile;
     public GameObject healthProj;
     private int projectileCount = 0;
+    public int maxProjectiles = 10;
     // Update is called once per frame
     void Update()
     {
-        if(player.GetComponent<PlayerController>().enemyHealth > 0 && projectileCount < 10) {
+        if(player.GetComponent<PlayerController>().enemyHealth > 0 && projectileCount < maxProjectiles) {
             int healChance = Random.Range(0,5);
 
             Vector2 projPos = new Vector2(Random.Range(-6,0), Random.Range(4,12));

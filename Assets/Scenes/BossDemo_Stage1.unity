@@ -403,12 +403,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc56e8c3b0dd5042bba6c768e21feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: GameplayDemo
-  enemyLevel: CombatDemo
+  nextLevel: MainMenu
+  enemyLevel: BossDemo_Stage1
   healthText: {fileID: 216840909}
   enemyDamageText: {fileID: 426224524}
   health: 100
-  enemyHealth: 150
+  enemyHealth: 300
   speed: 30
   player: {fileID: 354654574}
   animator: {fileID: 354654571}
@@ -747,7 +747,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4b2b87cc2af9ccd4496a245bd9a92fd8, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
   holdingObj: {fileID: 1444956891}
   projectile: {fileID: 4578515031383355141, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
   healthProj: {fileID: 3393634665649748554, guid: 7bb94f8d61faeb8469efa230f3996524, type: 3}
-  maxProjectiles: 5
+  maxProjectiles: 10
 --- !u!1 &1444956891
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MINISCOTCH'S TRIAL
+  m_text: HOPSCOTCH'S TRIAL
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}
   m_sharedMaterial: {fileID: 8635091062299634857, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}
