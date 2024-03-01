@@ -51,8 +51,8 @@ void Start() {
 void Update() {
     maxHealth = 100 + (5 * enemyDefeats);
     if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) {
-        animator.speed = 2f;
-        speed = devSpeed * 2;
+        animator.speed = 1.5f;
+        speed = devSpeed * 2f;
     }
     else {
         animator.speed = 1f;

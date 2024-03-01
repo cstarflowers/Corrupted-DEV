@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4516316673059777567}
   - component: {fileID: 5896974136160936706}
   - component: {fileID: 3356647014691074096}
-  - component: {fileID: 3711956925781509265}
+  - component: {fileID: 840149966801987754}
   - component: {fileID: 17654038225415316}
   m_Layer: 0
   m_Name: Healing Projectile
@@ -30,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 4b2b87cc2af9ccd4496a245bd9a92fd8, type: 3}
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 1, g: 0.82793444, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 11.94, y: 15.99}
+  m_Size: {x: 0.2, y: 0.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -114,8 +114,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &3711956925781509265
-BoxCollider2D:
+--- !u!58 &840149966801987754
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -146,19 +146,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.11725664, y: 2.415477}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.49017954, y: 0.34893826}
-    oldSize: {x: 11.94, y: 15.99}
-    newSize: {x: 11.94, y: 15.99}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 11.94, y: 15.99}
-  m_EdgeRadius: 0
+  m_Radius: 0.1
 --- !u!114 &17654038225415316
 MonoBehaviour:
   m_ObjectHideFlags: 0

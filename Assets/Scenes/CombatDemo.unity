@@ -189,8 +189,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280821960
-  m_fontColor: {r: 0.7830189, g: 0.15808116, b: 0.15808116, a: 1}
+    rgba: 4286130578
+  m_fontColor: {r: 0.57254905, g: 0.16078432, b: 0.47450984, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -405,9 +405,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextLevel: GameplayDemo
   enemyLevel: CombatDemo
+  health: 100
   healthText: {fileID: 216840909}
   enemyDamageText: {fileID: 426224524}
-  health: 100
   enemyHealth: 150
   speed: 30
   player: {fileID: 354654574}
@@ -619,8 +619,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4280821960
-  m_fontColor: {r: 0.7830189, g: 0.15808116, b: 0.15808116, a: 1}
+    rgba: 4286130578
+  m_fontColor: {r: 0.57254905, g: 0.16078432, b: 0.47450984, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -746,12 +746,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4b2b87cc2af9ccd4496a245bd9a92fd8, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 58c74623f2ecebb4e8a060d406bc2ffd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.32, y: 5.78}
+  m_Size: {x: 19.2, y: 10.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -766,8 +766,8 @@ Transform:
   m_GameObject: {fileID: 754940533}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.3499756, y: -1.4299927, z: 0.03705608}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 4.31, y: -0.37, z: 0.03705608}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -832,7 +832,7 @@ GameObject:
   - component: {fileID: 1479692585}
   - component: {fileID: 1479692584}
   m_Layer: 5
-  m_Name: TItle
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -877,7 +877,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: MINISCOTCH'S TRIAL
+  m_text: HopMinion's Revenge
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}
   m_sharedMaterial: {fileID: 8635091062299634857, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}
