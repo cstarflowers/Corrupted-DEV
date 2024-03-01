@@ -264,6 +264,7 @@ GameObject:
   - component: {fileID: 85482104}
   - component: {fileID: 85482103}
   - component: {fileID: 85482102}
+  - component: {fileID: 85482107}
   m_Layer: 0
   m_Name: HopMinion (4)
   m_TagString: Untagged
@@ -453,6 +454,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &85482107
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85482100}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &98268756
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +681,7 @@ GameObject:
   - component: {fileID: 131823220}
   - component: {fileID: 131823219}
   - component: {fileID: 131823218}
+  - component: {fileID: 131823223}
   m_Layer: 0
   m_Name: HopMinion (8)
   m_TagString: Untagged
@@ -833,6 +871,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &131823223
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131823216}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &135343086
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,6 +1523,7 @@ GameObject:
   - component: {fileID: 431679852}
   - component: {fileID: 431679851}
   - component: {fileID: 431679850}
+  - component: {fileID: 431679855}
   m_Layer: 0
   m_Name: HopMinion (6)
   m_TagString: Untagged
@@ -1638,6 +1713,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &431679855
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431679848}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1745,6 +1856,7 @@ GameObject:
   - component: {fileID: 542012133}
   - component: {fileID: 542012132}
   - component: {fileID: 542012131}
+  - component: {fileID: 542012136}
   m_Layer: 0
   m_Name: HopMinion (3)
   m_TagString: Untagged
@@ -1934,6 +2046,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &542012136
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542012129}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &676924622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2097,6 +2245,7 @@ GameObject:
   - component: {fileID: 688733055}
   - component: {fileID: 688733054}
   - component: {fileID: 688733053}
+  - component: {fileID: 688733058}
   m_Layer: 0
   m_Name: HopMinion (9)
   m_TagString: Untagged
@@ -2286,6 +2435,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &688733058
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688733051}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &710591944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3692,6 +3877,7 @@ GameObject:
   - component: {fileID: 1369212619}
   - component: {fileID: 1369212618}
   - component: {fileID: 1369212617}
+  - component: {fileID: 1369212622}
   m_Layer: 0
   m_Name: HopMinion (1)
   m_TagString: Untagged
@@ -3881,6 +4067,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &1369212622
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369212615}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &1493783753
 GameObject:
   m_ObjectHideFlags: 0
@@ -3944,6 +4166,7 @@ GameObject:
   - component: {fileID: 1504501707}
   - component: {fileID: 1504501706}
   - component: {fileID: 1504501705}
+  - component: {fileID: 1504501710}
   m_Layer: 0
   m_Name: HopMinion (5)
   m_TagString: Untagged
@@ -4133,6 +4356,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &1504501710
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1504501703}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &1515503103
 GameObject:
   m_ObjectHideFlags: 0
@@ -46031,6 +46290,7 @@ GameObject:
   - component: {fileID: 1520759141}
   - component: {fileID: 1520759140}
   - component: {fileID: 1520759139}
+  - component: {fileID: 1520759144}
   m_Layer: 0
   m_Name: HopMinion (10)
   m_TagString: Untagged
@@ -46220,6 +46480,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &1520759144
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1520759137}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &1532285037
 GameObject:
   m_ObjectHideFlags: 0
@@ -46500,6 +46796,7 @@ GameObject:
   - component: {fileID: 1584454792}
   - component: {fileID: 1584454791}
   - component: {fileID: 1584454790}
+  - component: {fileID: 1584454795}
   m_Layer: 0
   m_Name: HopMinion
   m_TagString: Untagged
@@ -46689,6 +46986,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &1584454795
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584454788}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &1638041658
 GameObject:
   m_ObjectHideFlags: 0
@@ -46871,6 +47204,7 @@ GameObject:
   - component: {fileID: 1692939121}
   - component: {fileID: 1692939120}
   - component: {fileID: 1692939119}
+  - component: {fileID: 1692939124}
   m_Layer: 0
   m_Name: HopMinion (7)
   m_TagString: Untagged
@@ -47060,6 +47394,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &1692939124
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692939117}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &1699564733
 GameObject:
   m_ObjectHideFlags: 0
@@ -47435,6 +47805,7 @@ GameObject:
   - component: {fileID: 1852911149}
   - component: {fileID: 1852911148}
   - component: {fileID: 1852911147}
+  - component: {fileID: 1852911152}
   m_Layer: 0
   m_Name: HopMinion (2)
   m_TagString: Untagged
@@ -47624,6 +47995,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1779435457}
   enemyLevel: CombatDemo
+  enemyAttacked: 0
+--- !u!70 &1852911152
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852911145}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09397209, y: 2.648338}
+  m_Size: {x: 8.912798, y: 13.661384}
+  m_Direction: 0
 --- !u!1 &1899001430
 GameObject:
   m_ObjectHideFlags: 0

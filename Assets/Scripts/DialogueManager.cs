@@ -21,13 +21,15 @@ public class DialogueManager : MonoBehaviour {
     private PlayerController movement;
     private Animator animator;
 
+    static public bool startEnemyDialogue = false;
+
     void Start() {
         movement = player.GetComponent<PlayerController>();
         animator = player.GetComponent<Animator>();
     }
 
     void Update() {
-        if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) {
+        if((Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) || startEnemyDialogue) {
             if(isColliding && !inUse) {
                 if(onText == -1) {
                     onText = 0;
@@ -46,6 +48,7 @@ public class DialogueManager : MonoBehaviour {
                 }
                 else {
                     StartCoroutine(showText(dialogue[onText]));
+                    startEnemyDialogue = false;
                     onText += 1;
                 }
             }
@@ -67,13 +70,13 @@ public class DialogueManager : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.name == "Player") {
+        if(other.gameObject.tag == "Player") {
             isColliding = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        if(other.gameObject.name == "Player") {
+        if(other.gameObject.tag == "Player") {
             isColliding = false;
             dialogueBox.SetActive(false);
             movement.enabled = true;
