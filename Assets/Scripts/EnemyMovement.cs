@@ -7,7 +7,6 @@ public class EnemyMovement : MonoBehaviour
     public Rigidbody2D player;
     private float speed;
     private float distance;
-    public string enemyLevel;
     private bool isColliding = false;
     void Start()
     {
