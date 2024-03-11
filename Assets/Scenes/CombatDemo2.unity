@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: GameplayDemo2
-  enemyLevel: CombatDemo
+  enemyLevel: CombatDemo2
   health: 100
   healthText: {fileID: 216840909}
   enemyDamageText: {fileID: 426224524}
@@ -899,7 +899,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HopMinion's Revenge
+  m_text: HopMinion's Hostage
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}
   m_sharedMaterial: {fileID: 8635091062299634857, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}

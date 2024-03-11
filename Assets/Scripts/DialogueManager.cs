@@ -43,6 +43,7 @@ public class DialogueManager : MonoBehaviour {
                     dialogueBox.SetActive(false);
                     movement.enabled = true;
                     Initiate.Fade(dialogue[onText+1].ToString(),Color.black,15);
+                    // gameObject.SetActive(false);
                     onText = 0;
 
                 }

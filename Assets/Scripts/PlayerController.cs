@@ -28,8 +28,7 @@ private float horizontalAbs;
 private int baseEnemyHealth;
 
 void Start() {
-    maxHealth = 100 + (5 * enemyDefeats);
-    health = maxHealth;
+    health = health + (5 * enemyDefeats);
 
     devSpeed = speed;
     Application.targetFrameRate = 60;
