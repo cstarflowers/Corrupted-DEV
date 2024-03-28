@@ -24,12 +24,24 @@ EditorBuildSettings:
     path: Assets/Scenes/CombatDemo.unity
     guid: ee33faff0b05dd5418b091c2569011c3
   - enabled: 1
-    path: Assets/Scenes/CombatDemo2.unity
+    path: Assets/Scenes/CombatDemoTut.unity
     guid: 472f3ab039908404d8f2cd4804d01d6f
+  - enabled: 1
+    path: Assets/Scenes/CombatDemo_Style2.unity
+    guid: ba18ba5884ef5a04c85053a37e187f4f
   - enabled: 1
     path: Assets/Scenes/CombatDemo_Glitched.unity
     guid: 16dba4b60911e6e488fe85d00737ff23
   - enabled: 1
+    path: Assets/Scenes/GameplayDemoUnderground.unity
+    guid: 35318a7a8b44a944ab64f9f61ac9ff69
+  - enabled: 1
+    path: Assets/Scenes/CombatDemoUG.unity
+    guid: f06c3800ef09a3247ac223fa912cbe5a
+  - enabled: 1
     path: Assets/Scenes/BossDemo_Stage1.unity
     guid: 92f41d34211018f4b9c3ad363e41e855
+  - enabled: 1
+    path: Assets/Scenes/YukiDemo.unity
+    guid: 9ef813fc14c7c7240ad87f78b0989505
   m_configObjects: {}

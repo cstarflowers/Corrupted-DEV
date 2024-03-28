@@ -103,7 +103,7 @@ void OnTriggerEnter2D(Collider2D enemy) {
         enemyHealth -= enemyDamage;
         // Debug.Log("[Debug] Enemy HP: " + enemyHealth + "/" + baseEnemyHealth + " (" + enemyDamage + " damage)");
 
-        if(enemyDamageText != null) {
+        if(enemyDamageText != null && enemyHealth >= 0) {
             enemyDamageText.text = "Enemy HP:" + enemyHealth + "/" + baseEnemyHealth;
         }
         if(enemyHealth <= 0) {

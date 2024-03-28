@@ -293,7 +293,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.6901961, g: 0.2509804, b: 0.3486719, a: 0}
+  m_BackGroundColor: {r: 0.24948375, g: 0.6886792, b: 0.45440227, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -404,12 +404,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: GameplayDemo2
-  enemyLevel: GameplayDemo2
-  health: 1
+  enemyLevel: CombatDemo_Style2
+  health: 100
   healthText: {fileID: 216840909}
   enemyDamageText: {fileID: 426224524}
-  enemyHealth: 999
-  speed: 1
+  enemyHealth: 300
+  speed: 30
   player: {fileID: 354654574}
   animator: {fileID: 354654571}
   verticalRaw: 0
@@ -697,7 +697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 754940535}
   - component: {fileID: 754940534}
-  - component: {fileID: 754940536}
+  - component: {fileID: 754940538}
   - component: {fileID: 754940537}
   m_Layer: 0
   m_Name: Enemy
@@ -748,7 +748,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 58c74623f2ecebb4e8a060d406bc2ffd, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -766,30 +766,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 754940533}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
-  m_LocalPosition: {x: 4.98, y: 0.16, z: 0.03705608}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.31, y: -0.37, z: 0.03705608}
   m_LocalScale: {x: 0.75, y: 0.75, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
---- !u!114 &754940536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 754940533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e4ef63d36556f4eb6e7be74c2ce597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 354654574}
-  holdingObj: {fileID: 1444956891}
-  projectile: {fileID: 4578515031383355141, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
-  healthProj: {fileID: 3393634665649748554, guid: 7bb94f8d61faeb8469efa230f3996524, type: 3}
-  maxProjectiles: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &754940537
 Animator:
   serializedVersion: 5
@@ -811,6 +794,25 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &754940538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754940533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72bd5cf3746e63b4ea8eb48d47b2e23a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 354654574}
+  holdingObj: {fileID: 1444956891}
+  healthProj: {fileID: 3393634665649748554, guid: 7bb94f8d61faeb8469efa230f3996524, type: 3}
+  config1: {fileID: 4578515031383355141, guid: 3ed77979e4c64f94b907675113285013, type: 3}
+  config2: {fileID: 4578515031383355141, guid: f14f8dc00d4c14d45ba2b34059c0eb69, type: 3}
+  config3: {fileID: 4578515031383355141, guid: 5b610f70997eddf4586c16db8e704ea0, type: 3}
+  maxProjectiles: 2
 --- !u!1 &1444956891
 GameObject:
   m_ObjectHideFlags: 0
@@ -859,7 +861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1479692583
 RectTransform:
   m_ObjectHideFlags: 0
@@ -899,7 +901,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: YUKI'S REVENGE
+  m_text: HopMinion's Revenge
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}
   m_sharedMaterial: {fileID: 8635091062299634857, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}

@@ -404,7 +404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextLevel: GameplayDemo2
-  enemyLevel: CombatDemo2
+  enemyLevel: CombatDemoTut
   health: 100
   healthText: {fileID: 216840909}
   enemyDamageText: {fileID: 426224524}

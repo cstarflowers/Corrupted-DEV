@@ -34,30 +34,39 @@ public class DialogueManager : MonoBehaviour {
                 if(onText == -1) {
                     onText = 0;
                 }
-                else if(dialogue[onText].ToString() == "STOP") {
+                if(dialogue[onText].ToString() == "STOP") {
                     dialogueBox.SetActive(false);
                     movement.enabled = true;
                     onText = -1;
+                    startEnemyDialogue = false;
                 }
-                else if(dialogue[onText].ToString() == "GOTO NEXT") {
+                if(dialogue[onText].ToString() == "GOTO NEXT") {
                     dialogueBox.SetActive(false);
                     movement.enabled = true;
                     Initiate.Fade(dialogue[onText+1].ToString(),Color.black,15);
                     // gameObject.SetActive(false);
                     onText = 0;
-
+                    startEnemyDialogue = false;
                 }
                 else {
-                    StartCoroutine(showText(dialogue[onText]));
-                    startEnemyDialogue = false;
-                    onText += 1;
+                    if(startEnemyDialogue && onText > 0) {
+                        if(Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)) {
+                            StartCoroutine(showText(dialogue[onText]));
+                            inUse = true;
+                            onText += 1;
+                        }                        
+                    }
+                    else {
+                        StartCoroutine(showText(dialogue[onText]));
+                        inUse = true;
+                        onText += 1;
+                    }
                 }
             }
         }
     }
 
     public IEnumerator showText(string displayText) {
-        inUse = true;
         currentText = " ";
         // successSound.Play();
         disableMovement();
@@ -71,13 +80,13 @@ public class DialogueManager : MonoBehaviour {
     }
 
     void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag == "Player") {
+        if(other.gameObject.tag == "Player" || (startEnemyDialogue && this.gameObject.tag != "NPC")) {
             isColliding = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D other) {
-        if(other.gameObject.tag == "Player") {
+        if(other.gameObject.tag == "Player" || (startEnemyDialogue && this.gameObject.tag != "NPC")) {
             isColliding = false;
             dialogueBox.SetActive(false);
             movement.enabled = true;
