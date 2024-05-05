@@ -826,7 +826,7 @@ Transform:
   m_GameObject: {fileID: 258084360}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.2, y: 16.4, z: 0.038800165}
+  m_LocalPosition: {x: 22.9, y: 17.1, z: 0.038800165}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2297,7 +2297,7 @@ Transform:
   m_GameObject: {fileID: 688733051}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.3, y: 12.9, z: 0.038800165}
+  m_LocalPosition: {x: -1.8, y: -12.9, z: 0.038800165}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2993,7 +2993,7 @@ Transform:
   m_GameObject: {fileID: 776265636}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.2, y: 0.7, z: 0.038800165}
+  m_LocalPosition: {x: 33.7, y: -2, z: 0.038800165}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4561,7 +4561,7 @@ Transform:
   m_GameObject: {fileID: 1092398150}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.21, y: 16.73, z: 0}
+  m_LocalPosition: {x: 5.2, y: 15.1, z: 0}
   m_LocalScale: {x: 0.32, y: 0.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4582,8 +4582,8 @@ MonoBehaviour:
   dialogue:
   - I closed my eyes for one second and, now, we're here. Isn't that odd?
   - Our chances of finding Yuki must be lower than ever now...
-  - We should all really get out there and start working.<br>Maybe you'll have better
-    luck than me?
+  - We should all really get back outside and start working.<br>Maybe you'll have
+    better luck than me finding an exit?
   - STOP
   textObject: {fileID: 98268758}
   dialogueBox: {fileID: 1177486716}
@@ -4840,7 +4840,7 @@ Transform:
   m_GameObject: {fileID: 1101504739}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.5, y: -10.6, z: 0.038800165}
+  m_LocalPosition: {x: -15.5, y: -9.8, z: 0.038800165}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5420,7 +5420,7 @@ Transform:
   m_GameObject: {fileID: 1177594498}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.8, y: 13.7, z: 0.038800165}
+  m_LocalPosition: {x: 36, y: 15.1, z: 0.038800165}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -44252,7 +44252,7 @@ Transform:
   m_GameObject: {fileID: 1570413887}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7, y: -3.1, z: 0.038800165}
+  m_LocalPosition: {x: 6.6, y: -2.8, z: 0.038800165}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45274,7 +45274,7 @@ Transform:
   m_GameObject: {fileID: 1859246981}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.6, y: -9.5, z: 0.038800165}
+  m_LocalPosition: {x: -29.2, y: -11.8, z: 0.038800165}
   m_LocalScale: {x: 0.35, y: 0.35, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

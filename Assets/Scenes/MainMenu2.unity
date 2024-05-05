@@ -1089,7 +1089,6 @@ GameObject:
   - component: {fileID: 1587294948}
   - component: {fileID: 1587294947}
   - component: {fileID: 1587294946}
-  - component: {fileID: 1587294949}
   m_Layer: 5
   m_Name: GameplayDemo
   m_TagString: Untagged
@@ -1161,7 +1160,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1587294949}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
         m_MethodName: 
         m_Mode: 1
@@ -1172,7 +1171,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: LoadScene
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 1
 --- !u!114 &1587294947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1211,29 +1210,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1587294944}
   m_CullTransparentMesh: 1
---- !u!114 &1587294949
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1587294944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0dc80dc6916fb54bb5aea14503df4bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogue:
-  - 'TIP: Please use [ENTER] to progress through dialogue.'
-  - 'You find a file on the surface of your desktop: PARK_DAY.mp4.'
-  - The file's icon is simple... just a picture of a beautiful, open-forest tree.
-  - It seems vaguely familiar to you, worth opening up for a better look...
-  - STOP
-  textObject: {fileID: 232894510}
-  dialogueBox: {fileID: 1331743055}
-  newLevel: Tutorial
-  delay: 0
-  fadeSpeed: 2
 --- !u!1 &1752369739
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1266,7 @@ MonoBehaviour:
   - You remember following your friends...<br> And, suddenly, a new .mp4 appears
     on your desktop!
   - Perhaps it too is worth some investigation, at least for nostalgia's sake...
+  - '[DEMO END]'
   - STOP
   textObject: {fileID: 232894510}
   dialogueBox: {fileID: 1331743055}

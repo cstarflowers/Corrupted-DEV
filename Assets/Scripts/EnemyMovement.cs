@@ -19,7 +19,7 @@ public class EnemyMovement : MonoBehaviour
      distance = Vector2.Distance(transform.position, player.transform.position);
      Vector2 direction = (player.transform.position - transform.position);
 
-     if(distance < 5 && !isColliding) {
+     if((distance < 5 && !isColliding) && player.GetComponent<PlayerController>().enabled == true) {
         transform.position = Vector2.MoveTowards(this.transform.position, player.transform.position, speed * Time.deltaTime);
      }
     }
