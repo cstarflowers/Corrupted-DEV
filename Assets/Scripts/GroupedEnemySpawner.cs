@@ -21,7 +21,7 @@ public class GroupedEnemySpawner : MonoBehaviour
             int healPos = Random.Range(0,2);
             projY = Random.Range(4,8);
             Vector2 projPos = new Vector2(-4.3f, projY);
-            if(Mathf.Abs(projY - prevPosY) > 1) {
+            if(Mathf.Abs(projY - prevPosY) > 2f) {
                 switch(healPos) {
                     case 0:
                         StartCoroutine(DelayDestruction(Instantiate(config1, projPos, Quaternion.identity, holdingObj.transform)));

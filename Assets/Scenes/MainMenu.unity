@@ -1223,10 +1223,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
+  - 'TIP: Please use [ENTER] to progress through dialogue.'
   - 'You find a file on the surface of your desktop: PARK_DAY.mp4.'
-  - The file's icon is simple... the video preview is just a picture of you and your
-    friends, side by side.
-  - You open it to get a better look.
+  - The file's icon is simple... just a picture of a beautiful, open-forest tree.
+  - It seems vaguely familiar to you, worth opening up for a better look...
   - STOP
   textObject: {fileID: 232894510}
   dialogueBox: {fileID: 1331743055}

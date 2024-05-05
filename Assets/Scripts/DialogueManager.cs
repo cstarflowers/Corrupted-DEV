@@ -40,11 +40,10 @@ public class DialogueManager : MonoBehaviour {
                     onText = -1;
                     startEnemyDialogue = false;
                 }
-                if(dialogue[onText].ToString() == "GOTO NEXT") {
+                else if(dialogue[onText].ToString() == "GOTO NEXT") {
                     dialogueBox.SetActive(false);
                     movement.enabled = true;
-                    Initiate.Fade(dialogue[onText+1].ToString(),Color.black,15);
-                    // gameObject.SetActive(false);
+                    Initiate.Fade(dialogue[onText+1].ToString(),Color.black,10);
                     onText = 0;
                     startEnemyDialogue = false;
                 }

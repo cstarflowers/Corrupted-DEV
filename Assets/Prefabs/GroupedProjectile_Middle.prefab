@@ -177,15 +177,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.613
+      value: 0.708
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7926182161950630207, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -251,15 +255,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4516316673059777567, guid: 7bb94f8d61faeb8469efa230f3996524, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 4516316673059777567, guid: 7bb94f8d61faeb8469efa230f3996524, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 4516316673059777567, guid: 7bb94f8d61faeb8469efa230f3996524, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.19740507
+      value: 0.187
       objectReference: {fileID: 0}
     - target: {fileID: 4516316673059777567, guid: 7bb94f8d61faeb8469efa230f3996524, type: 3}
       propertyPath: m_LocalPosition.y
@@ -297,6 +301,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5896974136160936706, guid: 7bb94f8d61faeb8469efa230f3996524, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -317,15 +325,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.204
+      value: -0.331
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -367,6 +375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile
       objectReference: {fileID: 0}
+    - target: {fileID: 7926182161950630207, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -387,15 +399,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.003
+      value: -0.074
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -437,6 +449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Projectile (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7926182161950630207, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -457,15 +473,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.06
+      value: 0.075
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.4019041
+      value: 0.447
       objectReference: {fileID: 0}
     - target: {fileID: 2311966616351094422, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -506,6 +522,10 @@ PrefabInstance:
     - target: {fileID: 4578515031383355141, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
       propertyPath: m_Name
       value: Projectile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7926182161950630207, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
