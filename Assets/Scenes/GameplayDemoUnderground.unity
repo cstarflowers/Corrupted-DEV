@@ -2784,8 +2784,8 @@ MonoBehaviour:
   - Hop... Hop... Hop... What do we have here?!
   - I don't remember saying you could play here...<br>What makes you think you have
     the right to stay in my park?
-  - I guess we'll have to settle this with a game!
-  - Let's hope you're good at following directions for once-
+  - My minions should've told you that I don't play nice.
+  - Let's hope you're good at following directions, this time in man-to-man combat!
   - GOTO NEXT
   - BossDemo_Stage1
   textObject: {fileID: 98268758}
@@ -43235,9 +43235,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Woaahhhh.. how did we get here??
-  - Are we really in a cave right now? Or am I just making that up?
-  - I guess we'll have to take a look around and see if we can find the others.<br>I'm
-    about ready to book it!!
+  - Are we under the park right now?? Or did I just make that up?
+  - I guess we'll have to take a look around and see if we can find the others.<br>With
+    a trap like that, I'm about ready to book it!!
   - Ugh- I knew it was a bad idea to start meeting at the park.
   - STOP
   textObject: {fileID: 98268758}
@@ -44172,6 +44172,7 @@ MonoBehaviour:
   speed: 20
   player: {fileID: 1779435457}
   animator: {fileID: 1779435459}
+  enemyAnimator: {fileID: 0}
   verticalRaw: 0
   horizontalRaw: 0
 --- !u!95 &1779435459

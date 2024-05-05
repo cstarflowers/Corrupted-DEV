@@ -1320,7 +1320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc56e8c3b0dd5042bba6c768e21feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: MainMenu
+  nextLevel: GameplayDemo3
   enemyLevel: BossDemo_Stage2
   health: 100
   healthText: {fileID: 216840909}
