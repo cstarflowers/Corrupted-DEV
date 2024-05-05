@@ -640,8 +640,8 @@ MonoBehaviour:
   - Oh good, you made it, PLAYER!!
   - Our spot is just up ahead, but uhh...
   - I think someone left their stuff there when we got held up!
-  - Maybe they have some kind of ID in that backpack of theirs? Let's give them their
-    stuff back!
+  - Maybe they have some kind of ID in that backpack of theirs?<br>Let's give them
+    their stuff back!
   - Lili and PLAYER, world's best detectives reporting for duty! :D
   - STOP
   textObject: {fileID: 98268758}
@@ -2222,7 +2222,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - While investigating the backpack, you notice an .mp4 file left unattended on
-    the bench. The preview looks pitch black.
+    the bench.<br>The preview looks pitch black.
   - You decide to play the video to better understand who left their things here...
   - GOTO NEXT
   - GameplayDemoUnderground
@@ -4350,8 +4350,8 @@ MonoBehaviour:
   - I'm impressed! You defeated all those guys like it was nothing.
   - I should've given you some more respect, eh?
   - Those bullies here are real aggressive, but you're a good fighter you know!
-  - Just remember you can hold SHIFT to sprint if you happen to be getting chased;
-    the safest option is always running away!
+  - Just remember you can hold SHIFT to sprint if you happen to be getting chased;<br>the
+    safest option is always running away!
   - STOP
   textObject: {fileID: 98268758}
   dialogueBox: {fileID: 1177486716}
@@ -45506,6 +45506,7 @@ MonoBehaviour:
   speed: 20
   player: {fileID: 1779435457}
   animator: {fileID: 1779435459}
+  enemyAnimator: {fileID: 0}
   verticalRaw: 0
   horizontalRaw: 0
 --- !u!95 &1779435459

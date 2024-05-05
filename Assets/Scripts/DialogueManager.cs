@@ -43,7 +43,7 @@ public class DialogueManager : MonoBehaviour {
                 else if(dialogue[onText].ToString() == "GOTO NEXT") {
                     dialogueBox.SetActive(false);
                     movement.enabled = true;
-                    Initiate.Fade(dialogue[onText+1].ToString(),Color.black,10);
+                    Initiate.Fade(dialogue[onText+1].ToString(),Color.black,20);
                     onText = 0;
                     startEnemyDialogue = false;
                 }

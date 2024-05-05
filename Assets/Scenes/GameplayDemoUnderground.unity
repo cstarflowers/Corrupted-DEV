@@ -2786,6 +2786,8 @@ MonoBehaviour:
     the right to stay in my park?
   - My minions should've told you that I don't play nice.
   - Let's hope you're good at following directions, this time in man-to-man combat!
+  - 'TIP: If you aren''t ready for the boss fight, you can use ESCAPE to quit at
+    any time.'
   - GOTO NEXT
   - BossDemo_Stage1
   textObject: {fileID: 98268758}
@@ -4200,7 +4202,8 @@ MonoBehaviour:
   dialogue:
   - I closed my eyes for one second and, now, we're here. Isn't that odd?
   - Our chances of finding Yuki must be lower than ever now...
-  - I really hope you have better luck than me out here.
+  - We should all really get out there and start working.<br>Maybe you'll have better
+    luck than me?
   - STOP
   textObject: {fileID: 98268758}
   dialogueBox: {fileID: 1177486716}
@@ -43238,7 +43241,7 @@ MonoBehaviour:
   - Are we under the park right now?? Or did I just make that up?
   - I guess we'll have to take a look around and see if we can find the others.<br>With
     a trap like that, I'm about ready to book it!!
-  - Ugh- I knew it was a bad idea to start meeting at the park.
+  - Ugh- This is what happens when you try to do something nice for a stranger.
   - STOP
   textObject: {fileID: 98268758}
   dialogueBox: {fileID: 1177486716}

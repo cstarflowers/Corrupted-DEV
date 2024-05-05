@@ -600,6 +600,7 @@ GameObject:
   - component: {fileID: 754940535}
   - component: {fileID: 754940534}
   - component: {fileID: 754940538}
+  - component: {fileID: 754940539}
   - component: {fileID: 754940537}
   m_Layer: 0
   m_Name: Enemy
@@ -716,6 +717,20 @@ MonoBehaviour:
   config2: {fileID: 4578515031383355141, guid: f14f8dc00d4c14d45ba2b34059c0eb69, type: 3}
   config3: {fileID: 4578515031383355141, guid: 5b610f70997eddf4586c16db8e704ea0, type: 3}
   maxProjectiles: 2
+--- !u!114 &754940539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754940533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51245261852b92d42adf2a85c8fee61b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1805242520}
+  newLevel: GameplayDemoUnderground
 --- !u!1 &1444956891
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,7 +1340,7 @@ MonoBehaviour:
   health: 100
   healthText: {fileID: 216840909}
   enemyDamageText: {fileID: 426224524}
-  enemyHealth: 500
+  enemyHealth: 450
   speed: 30
   player: {fileID: 1805242520}
   animator: {fileID: 1805242517}

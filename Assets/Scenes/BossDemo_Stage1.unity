@@ -600,6 +600,7 @@ GameObject:
   - component: {fileID: 754940535}
   - component: {fileID: 754940534}
   - component: {fileID: 754940536}
+  - component: {fileID: 754940538}
   - component: {fileID: 754940537}
   m_Layer: 0
   m_Name: Enemy
@@ -714,6 +715,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &754940538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754940533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51245261852b92d42adf2a85c8fee61b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1031028870}
+  newLevel: GameplayDemoUnderground
 --- !u!1 &1031028866
 GameObject:
   m_ObjectHideFlags: 0
