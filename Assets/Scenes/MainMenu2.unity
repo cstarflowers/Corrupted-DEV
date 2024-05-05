@@ -1163,8 +1163,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1587294949}
         m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
-        m_MethodName: SendMessage
-        m_Mode: 5
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1172,7 +1172,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: LoadScene
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
 --- !u!114 &1587294947
 MonoBehaviour:
   m_ObjectHideFlags: 0

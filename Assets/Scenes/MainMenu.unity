@@ -1226,7 +1226,7 @@ MonoBehaviour:
   - 'TIP: Please use [ENTER] to progress through dialogue.'
   - 'You find a file on the surface of your desktop: PARK_DAY.mp4.'
   - The file's icon is simple... just a picture of a beautiful, open-forest tree.
-  - You play it in an effort to understand why it seems so familiar.
+  - Intrigued, you play it.
   - STOP
   textObject: {fileID: 232894510}
   dialogueBox: {fileID: 1331743055}

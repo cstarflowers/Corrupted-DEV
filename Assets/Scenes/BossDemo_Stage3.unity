@@ -818,7 +818,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HopScotch's Trial
+  m_text: HopScotch's Trial (Stage 1)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}
   m_sharedMaterial: {fileID: 8635091062299634857, guid: 41d36775bec47904087ef6ea343df0fd, type: 2}
@@ -1334,8 +1334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc56e8c3b0dd5042bba6c768e21feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: GameplayDemo3
-  enemyLevel: BossDemo_Stage1
+  nextLevel: BossDemo_Stage2
+  enemyLevel: BossDemo_Stage3
   health: 100
   healthText: {fileID: 216840909}
   enemyDamageText: {fileID: 426224524}
