@@ -2795,7 +2795,7 @@ MonoBehaviour:
   - 'TIP: If you aren''t ready for the boss fight, you can use ESCAPE to quit at
     any time.<br>You can even gain additional HP by killing enemies here!'
   - GOTO NEXT
-  - BossDemo_Stage1
+  - BossDemo_Stage3
   textObject: {fileID: 98268758}
   dialogueBox: {fileID: 1177486716}
   player: {fileID: 1779435457}
