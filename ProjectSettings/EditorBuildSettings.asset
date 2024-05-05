@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/Scenes/BossDemo_Stage1.unity
     guid: 92f41d34211018f4b9c3ad363e41e855
   - enabled: 1
+    path: Assets/Scenes/BossDemo_Stage2.unity
+    guid: 13b77a27674b6f948b3a42aae4510803
+  - enabled: 1
     path: Assets/Scenes/YukiDemo.unity
     guid: 9ef813fc14c7c7240ad87f78b0989505
   m_configObjects: {}

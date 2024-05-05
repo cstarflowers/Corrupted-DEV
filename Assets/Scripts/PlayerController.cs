@@ -19,6 +19,9 @@ public float speed;
 private float devSpeed;
 public Rigidbody2D player;
 public Animator animator;
+private bool canHit = false;
+private Collider2D enemyObj;
+public GameObject enemyAnimator;
 
 public float verticalRaw;
 private float verticalAbs;
@@ -83,6 +86,27 @@ void FixedUpdate() {
     else {
         animator.SetBool("isWalking", false);
     }
+
+    if(canHit && (Input.GetKey(KeyCode.Return) || Input.GetKey(KeyCode.Space))) {
+        canHit = false;
+        Destroy(enemyObj.gameObject);
+        enemyDamage = health / 2;
+        enemyHealth -= enemyDamage;
+        if(enemyAnimator != null) {
+            enemyAnimator.SetActive(true);
+            enemyAnimator.GetComponent<SpriteRenderer>().enabled = true;
+        }
+        // Debug.Log("[Debug] Enemy HP: " + enemyHealth + "/" + baseEnemyHealth + " (" + enemyDamage + " damage)");
+        
+        if(enemyDamageText != null && enemyHealth >= 0) {
+            enemyDamageText.text = "Enemy HP:" + enemyHealth + "/" + baseEnemyHealth;
+        }
+        if(enemyHealth <= 0) {
+            enemyDefeats += 1;
+            this.enabled = false;
+            Initiate.Fade(nextLevel,Color.black,5);
+        }
+    }
 }
 
 void OnTriggerEnter2D(Collider2D enemy) {
@@ -98,19 +122,25 @@ void OnTriggerEnter2D(Collider2D enemy) {
         }
     }
     else if(enemy.gameObject.tag == "AttackPoint") {
-        Destroy(enemy.gameObject);
-        enemyDamage = health / 2;
-        enemyHealth -= enemyDamage;
-        // Debug.Log("[Debug] Enemy HP: " + enemyHealth + "/" + baseEnemyHealth + " (" + enemyDamage + " damage)");
-
-        if(enemyDamageText != null && enemyHealth >= 0) {
-            enemyDamageText.text = "Enemy HP:" + enemyHealth + "/" + baseEnemyHealth;
-        }
-        if(enemyHealth <= 0) {
-            enemyDefeats += 1;
-            this.enabled = false;
-            Initiate.Fade(nextLevel,Color.black,5);
-        }
+        canHit = true;
+        enemyObj = enemy;
     }
 }
+
+void OnTriggerExit2D(Collider2D enemy) {
+    if(enemy.gameObject.tag == "AttackPoint") {
+        canHit = false;
+        StopCoroutine(StopHitAnimation());
+        StartCoroutine(StopHitAnimation());
+    }
+}
+
+
+IEnumerator StopHitAnimation() {
+    yield return new WaitForSeconds(1);
+        if(enemyAnimator != null) {
+            enemyAnimator.SetActive(false);
+            enemyAnimator.GetComponent<SpriteRenderer>().enabled = false;
+        }
+    }
 }
