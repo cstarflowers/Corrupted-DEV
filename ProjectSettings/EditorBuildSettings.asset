@@ -42,11 +42,20 @@ EditorBuildSettings:
     path: Assets/Scenes/CombatDemoUG.unity
     guid: f06c3800ef09a3247ac223fa912cbe5a
   - enabled: 1
+    path: Assets/Scenes/CombatDemoUG_Style2.unity
+    guid: 4ba59eeabe926474a9bf92372ac46c9c
+  - enabled: 1
+    path: Assets/Scenes/CombatDemoUG_Style3.unity
+    guid: 6c4c27b2c1ca9bd418dd89c66ee8ff66
+  - enabled: 1
     path: Assets/Scenes/BossDemo_Stage1.unity
     guid: 92f41d34211018f4b9c3ad363e41e855
   - enabled: 1
     path: Assets/Scenes/BossDemo_Stage2.unity
     guid: 13b77a27674b6f948b3a42aae4510803
+  - enabled: 1
+    path: Assets/Scenes/BossDemo_Stage3.unity
+    guid: 554ac06a2d6f78342837e97c09abfd1a
   - enabled: 1
     path: Assets/Scenes/GameplayDemo3.unity
     guid: e4874d6ecd697df43b5cc5e7a5c39356

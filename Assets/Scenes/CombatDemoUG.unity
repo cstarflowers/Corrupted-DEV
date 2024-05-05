@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 179392289}
   - component: {fileID: 179392288}
   - component: {fileID: 179392287}
+  - component: {fileID: 179392290}
   m_Layer: 0
   m_Name: Error Box
   m_TagString: Untagged
@@ -274,6 +275,51 @@ Transform:
   - {fileID: 1234595233}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &179392290
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179392286}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -5.967204}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 26.643538, y: 15}
+    newSize: {x: 4.5, y: 4.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 26.643538, y: 3.0655913}
+  m_EdgeRadius: 0
 --- !u!1 &216840907
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,8 +508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cc56e8c3b0dd5042bba6c768e21feba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: GameplayDemo2
-  enemyLevel: CombatDemo_Style2
+  nextLevel: GameplayDemoUnderground
+  enemyLevel: CombatDemoUG
   health: 100
   healthText: {fileID: 216840909}
   enemyDamageText: {fileID: 426224524}
@@ -956,16 +1002,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 754940533}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72bd5cf3746e63b4ea8eb48d47b2e23a, type: 3}
+  m_Script: {fileID: 11500000, guid: e0e4ef63d36556f4eb6e7be74c2ce597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 302124656}
   holdingObj: {fileID: 1444956891}
+  projectile: {fileID: 4578515031383355141, guid: 0c1fbb1136265d340b8f37b7680311e9, type: 3}
   healthProj: {fileID: 3393634665649748554, guid: 7bb94f8d61faeb8469efa230f3996524, type: 3}
-  config1: {fileID: 4578515031383355141, guid: 3ed77979e4c64f94b907675113285013, type: 3}
-  config2: {fileID: 4578515031383355141, guid: f14f8dc00d4c14d45ba2b34059c0eb69, type: 3}
-  config3: {fileID: 4578515031383355141, guid: 5b610f70997eddf4586c16db8e704ea0, type: 3}
-  maxProjectiles: 2
+  maxProjectiles: 5
 --- !u!1 &782372340
 GameObject:
   m_ObjectHideFlags: 0

@@ -137,7 +137,7 @@ void OnTriggerExit2D(Collider2D enemy) {
 
 
 IEnumerator StopHitAnimation() {
-    yield return new WaitForSeconds(1);
+    yield return new WaitForSeconds(0.6f);
         if(enemyAnimator != null) {
             enemyAnimator.SetActive(false);
             enemyAnimator.GetComponent<SpriteRenderer>().enabled = false;

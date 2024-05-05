@@ -18,11 +18,11 @@ public class GroupedEnemySpawner : MonoBehaviour
     void Update()
     {
         if(player.GetComponent<PlayerController>().enemyHealth > 0 && projectileCount < maxProjectiles) {
-            int healPos = Random.Range(0,2);
+            int healChance = Random.Range(0,2);
             projY = Random.Range(4,8);
             Vector2 projPos = new Vector2(-4.3f, projY);
             if(Mathf.Abs(projY - prevPosY) > 2f) {
-                switch(healPos) {
+                switch(healChance) {
                     case 0:
                         StartCoroutine(DelayDestruction(Instantiate(config1, projPos, Quaternion.identity, holdingObj.transform)));
                         break;
