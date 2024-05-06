@@ -44,6 +44,9 @@ public class DialogueManager : MonoBehaviour {
                     dialogueBox.SetActive(false);
                     movement.enabled = true;
                     Initiate.Fade(dialogue[onText+1].ToString(),Color.black,30);
+                    if(startEnemyDialogue) { 
+                        Destroy(this.gameObject);
+                    }
                     onText = 0;
                     startEnemyDialogue = false;
                 }
