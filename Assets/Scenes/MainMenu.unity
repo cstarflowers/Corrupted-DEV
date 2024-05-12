@@ -265,7 +265,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TESTING TESTING 123
+  m_text: 'TIP: Welcome to your computer''s Desktop!<br>Click an app icon to get
+    started.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 169214e033a93e44db65bda1c582ac42, type: 2}
   m_sharedMaterial: {fileID: 678015229851602326, guid: 169214e033a93e44db65bda1c582ac42, type: 2}
@@ -1311,13 +1312,12 @@ MonoBehaviour:
   - 'TIP: Please use [ENTER] to progress through dialogue.'
   - 'You find a video file on the surface of your desktop: PARK_DAY.mp4.'
   - The file's icon is simple... just a picture of a beautiful, open-forest tree.
-  - Intrigued, you play it.
+  - Intrigued, you play it, and feel yourself begin to relive the memories.
   - STOP
   textObject: {fileID: 232894510}
   dialogueBox: {fileID: 1331743055}
   newLevel: Tutorial
   delay: 0
-  fadeSpeed: 2
 --- !u!1 &1752369739
 GameObject:
   m_ObjectHideFlags: 0

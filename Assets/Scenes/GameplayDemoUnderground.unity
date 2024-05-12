@@ -2791,7 +2791,7 @@ MonoBehaviour:
   - I don't remember saying you could play here...<br>What makes you think you have
     the right to stay in my park?
   - My minions should've told you that I don't play nice.
-  - Let's hope you're good at following directions, this time in man-to-man combat!
+  - I guess if you like this park so much, you'll have to stay here forever!
   - 'TIP: If you aren''t ready for the boss fight, you can use ESCAPE to quit at
     any time.<br>You can even gain additional HP by killing enemies here!'
   - GOTO NEXT
@@ -4581,9 +4581,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - I closed my eyes for one second and, now, we're here. Isn't that odd?
-  - Our chances of finding Yuki must be lower than ever now...
+  - Our chances of finding Yuki must be lower than ever now.<br>There are so many
+    bullies around here too...
   - We should all really get back outside and start working.<br>Maybe you'll have
     better luck than me finding an exit?
+  - 'TIP: Enemies will get stronger as levels progress, and a way out may not be
+    as easy to find.<br>You may even be required to fight a boss before you can continue
+    looking for Yuki...'
   - STOP
   textObject: {fileID: 98268758}
   dialogueBox: {fileID: 1177486716}

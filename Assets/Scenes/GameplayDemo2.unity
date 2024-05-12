@@ -642,7 +642,7 @@ MonoBehaviour:
   - I think someone left their stuff there when we got held up!
   - Maybe they have some kind of ID in that backpack of theirs?<br>Let's give them
     their stuff back!
-  - Lili and PLAYER, world's best detectives reporting for duty! :D
+  - 'TIP: Use ENTER on important objects to interact.'
   - STOP
   textObject: {fileID: 98268758}
   dialogueBox: {fileID: 1177486716}

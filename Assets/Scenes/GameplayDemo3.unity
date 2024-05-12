@@ -6904,8 +6904,8 @@ MonoBehaviour:
   - Hey, sport, I filled Lili in on everything that happened while you were gone.
   - Still...no luck in actually finding Yuki or anything.
   - But, good news, now that these bullies are out of here,<br>we should have no
-    problem heading to her neighborhood!
-  - The exit is just up ahead for when you're done talking to everyone. We've got
+    problem searching for her nearby!
+  - The exit is just up ahead for when you're done talking to everyone. We can do
     this.
   - 'TIP: Some maps have secret passageways that allow you to change files!<br>Here
     you can find one by running ahead and clicking ENTER at the edge of the world.'
@@ -7255,9 +7255,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
   - Huff...Huff...Huff....
-  - You're good at this, PLAYER, beating me in three fights isn't an easy task.
-  - I guess... huff... you and your friends can use this park.
-  - Use it well for me, okay? And don't forget how great of a leader I was!
+  - You're good at this, Player, beating me in three fights isn't an easy task.
+  - I guess... huff... you and your friends can use this park as you wish.
+  - My friends and I will retreat, but never forget how great this park was under
+    my rule!
   - STOP
   textObject: {fileID: 98268758}
   dialogueBox: {fileID: 1177486716}
@@ -15711,8 +15712,8 @@ MonoBehaviour:
   - Oh, and, Hoshi filled me in on the whole Yuki situation too...<br> We've been
     looking for her while you were out.
   - Maybe our detective mission will have to change course...
-  - We can check out Yuki's House next, maybe one of her neighbors knows what's going
-    on!
+  - We can check out Yuki's House next, her neighbors down the street might've seen
+    her walking!
   - STOP
   textObject: {fileID: 98268758}
   dialogueBox: {fileID: 1177486716}
@@ -16179,6 +16180,7 @@ MonoBehaviour:
   dialogue:
   - You see the end of the forest up ahead, and walk in.<br>The darkness around you
     begins to fade.
+  - Let's hope that Yuki hasn't made it very far.
   - GOTO NEXT
   - MainMenu2
   textObject: {fileID: 98268758}

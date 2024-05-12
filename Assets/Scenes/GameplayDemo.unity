@@ -749,10 +749,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'TIP: You can use WASD and ENTER to move/interact with the world!
-
-    Stay
-    clear of enemies, and keep up with your friends :)'
+  m_text: 'TIP: Enemies will move when you come close, but can be defeated in groups.<br>Talk
+    to your friends to learn new combat strategies!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 169214e033a93e44db65bda1c582ac42, type: 2}
   m_sharedMaterial: {fileID: 678015229851602326, guid: 169214e033a93e44db65bda1c582ac42, type: 2}
@@ -39758,7 +39756,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1177486717
 RectTransform:
   m_ObjectHideFlags: 0
